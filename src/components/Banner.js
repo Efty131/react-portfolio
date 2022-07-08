@@ -12,7 +12,9 @@ export const Banner = () => {
     const [index, setIndex] = useState(1);
     const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer", "Programmer" ];
     const period = 2000;
-  
+  //  Ignore it
+  console.log(index);
+  //  Ignore it
     useEffect(() => {
       let ticker = setInterval(() => {
         tick();
@@ -39,7 +41,6 @@ export const Banner = () => {
       } else if (isDeleting && updatedText === '') {
         setIsDeleting(false);
         setLoopNum(loopNum + 1);
-        setIndex(1);
         setDelta(500);
       } else {
         setIndex(prevIndex => prevIndex + 1);
@@ -60,7 +61,7 @@ export const Banner = () => {
                     <button onClick={handleClick}>Let's Connect < ArrowRightCircle size={25} /> </button>
                 </Col>
                 <Col xm={12} md={6} xl={5}>
-                    <img src={headerImg} alt='Header Image' />
+                    <img src={headerImg} alt='HeaderImage' />
                 </Col>
             </Row>
         </Container>
