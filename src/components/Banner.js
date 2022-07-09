@@ -13,7 +13,7 @@ export const Banner = () => {
     const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer", "Programmer" ];
     const period = 2000;
   //  Ignore it
-  console.log(index);
+  if(index){}
   //  Ignore it
     useEffect(() => {
       let ticker = setInterval(() => {
