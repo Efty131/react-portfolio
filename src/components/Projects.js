@@ -81,7 +81,7 @@ export const Projects = () => {
                         <p>Lorem Ipsum</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                        <p>Lorem</p>
+                        <p>Lorem Ispum dolor</p>
                     </Tab.Pane>
                   </Tab.Content>
                   </Tab.Container>
