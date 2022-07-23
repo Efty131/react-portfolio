@@ -48,7 +48,7 @@ export const Contact = () => {
         field="message"
         errors={state.errors}
       />
-      <button type="submit" disabled={state.submitting}>
+      <button type="submit" id="btn" disabled={state.submitting}>
         Submit
       </button>
     </form>
