@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useForm, ValidationError } from '@formspree/react';
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 import contactImg from '../assets/img/contact-img.svg';
 
@@ -19,6 +21,9 @@ export const Contact = () => {
                  <img src={contactImg} alt="..." />
                 </Col>
                 <Col md={6}>
+                  <TrackVisibility>
+                  {({ isVisible }) => 
+                  <div className={ isVisible ? "animate__animated animate__fadeInUp" : ""}>
                     <h2>Get In Touch</h2>
                     <form onSubmit={handleSubmit}>
                       <label htmlFor='name'>Name</label>
@@ -52,6 +57,8 @@ export const Contact = () => {
         Submit
       </button>
     </form>
+    </div>}
+    </TrackVisibility>
                 </Col>
             </Row>
         </Container>

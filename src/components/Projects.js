@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
+import "animate.css";
+import TrackVisibility from 'react-on-screen';
 
 import { ProjectCards } from './ProjectCards';
 import colorSharp2 from '../assets/img/color-sharp2.png';
@@ -11,7 +13,7 @@ export const Projects = () => {
 
     const projects = [
         {
-          title: "Business Startup",
+          title: "Web Development",
           description: "Design & Development",
           imgUrl: projImg1,
           LiveLink: "https://react-bootstrap.github.io/components/tabs/",
@@ -27,7 +29,7 @@ export const Projects = () => {
           imgUrl: projImg3,
         },
         {
-          title: "Business Startup",
+          title: "Web Development",
           description: "Design & Development",
           imgUrl: projImg1,
         },
@@ -48,8 +50,13 @@ export const Projects = () => {
         <Container>
             <Row>
                 <Col>
-                  <h2>Projects</h2>
+                <TrackVisibility>
+                {({ isVisible }) =>
+                  <div className={isVisible ? "animate__animated animate__fadeInUp": ""}>
+                <h2>Projects</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus culpa laudantium totam distinctio, dignissimos, iste mollitia delectus harum asperiores in maiores natus, perferendis necessitatibus ipsum.</p>
+                  </div>}
+                </TrackVisibility>
                   <Tab.Container id="projects-tab" defaultActiveKey='first'>
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -84,7 +91,7 @@ export const Projects = () => {
                         <p>Lorem Ispum dolor</p>
                     </Tab.Pane>
                   </Tab.Content>
-                  </Tab.Container>
+                  </Tab.Container>  
                 </Col>
             </Row>
         </Container>
