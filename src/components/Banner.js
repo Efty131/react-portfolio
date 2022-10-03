@@ -28,7 +28,7 @@ export const Banner = () => {
                     {({ isVisible }) =>
                     <div className={ isVisible ? "animate__animated animate__lightSpeedInRight" : ""}>
                     <span className="tagline">Welcome to my Portfolio</span>
-                    <h1>{`I'm Efty, a `}<span className='wrap text-primary'>{text}</span></h1>
+                    <h1>{`I'm Efty,`}<br></br>A <span className='wrap text-primary'>{text}</span></h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit consectetur culpa molestias saepe incidunt suscipit, et doloribus ab temporibus quo cupiditate officiis minima delectus nisi hic modi ea iusto soluta necessitatibus ex dolor.</p>
                     <button onClick={handleClick}>Let's Connect < ArrowRightCircle size={25} /> </button>
                     </div>}

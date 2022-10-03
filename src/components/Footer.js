@@ -18,10 +18,10 @@ export const Footer = () => {
                 <Col sm={6} className="text-center text-sm-end">
                     <div className='social-icon'>
                         <a href="#home"><img src={navIcon1} alt="..." /></a>
-                        <a href="#home"><img src={navIcon2} alt="..." /></a>
+                        <a href="https://www.facebook.com/EftyEfty75/" target="blank"><img src={navIcon2} alt="..." /></a>
                         <a href="#home"><img src={navIcon3} alt="..." /></a>
                     </div>
-                    <p>CopyRight 2022, All Right Reserved</p>
+                    <p>CopyRight 2022, All Right Reserved To <span className="fw-bold text-info"><i>Efty</i></span></p>
                 </Col>
             </Row>
         </Container>
